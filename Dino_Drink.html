@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Drink - Segernya Bikin Senyum</title>
+    <style>
+        .popup {
+            display:none;
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px gray;
+            border-radius: 10px;
+            z-index: 1000;
+            text-align: center;
+        }
+        body {
+            background-color: #e4d4a8;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: #222;
+            font-size: 50px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: 
+            rgb(199, 180, 145);
+        }
+        td {
+            padding: 8px;
+        }
+        h3 {
+            text-align: center;
+        }
+        
+        .galeri {
+            display: flex;
+            gap: 20px;
+        }
+        .galeri img {
+            width: 300px;
+            border-radius: 30px;
+        }
+        #gambar {
+            text-align: center;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: red;
+            font-weight: bold;
+        }
+        button {
+            background-color: #ceb9459c;
+            color: rgb(0, 8, 6);
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        footer {
+            text-align: center;
+            margin: auto;
+            color: #555248;
+        }
+        .text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>DINO DRINK</h1>
+
+    <hr>
+
+    <p class="text"><cite>Dino Drink</cite> adalah minuman kekinian dengan konsep unik dan tampilan yang menggemaskan. Terinspirasi dari karakter dinosaurus lucu, kami hadir untuk menemani harimu dengan rasa yang menyegarkan dan tampilan yang bikin gemas.</p>
+    <p class="text">Cocok untuk semua usia, mulai dari anak sekolah, mahasiswa, sampai pekerja kantoran. Dengan bahan alami dan tanpa pengawet, Dino Drink siap biin hari kamu lebih ceria!.</p>
+
+    <hr>
+
+    <h2>Menu Pilihan Kami</h2>
+    <table border="1" cellpadding="7">
+        <tr>
+            <td>Dino Matcha</td>
+            <td>Kombinasi matcha Jepang dan susu segar</td>
+        </tr>
+        <tr>
+            <td>Dino Berry</td>
+            <td>Perpaduan Strawberry asli dan yakult</td>
+        </tr>
+        <tr>
+            <td>Dino Mango</td>
+            <td>Mango Juicy dengan cream lembut</td>
+        </tr>
+        <tr>
+            <td>Dino Cokelat Lava</td>
+            <td>Cokelat Belgia dengan es krim vanilla</td>
+        </tr>
+        <tr>
+            <td>Dino Coffe Shake</td>
+            <td>Espresso blend + whipped cream (NON-KIDS)</td>
+        </tr>
+    </table>
+    <h3><b>START FROM Rp 18.000!!!</b></h3>
+
+    <hr>
+
+    <h2>Kenapa Pilih Dino Drink</h2>
+    <ul>
+        <li>Rasa Unik & segar banget</li>
+        <li>Desain botol lucu bergambar dinosaurus</li>
+        <li>Bahan alami tanpa pengawet</li>
+        <li>Pengiriman cepat & aman (khusus area Medan)</li>
+        <li>Harga terjangkau, rasa mewah</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="gambar">Galeri Minuman</h2>
+
+    <div class="galeri">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.zJZDCc_39XuOWpLD7HCZDgHaEK?pid=Api&P=0&h=180.jpeg">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.trsTi4VzmpW7c7uNsJS0ywHaFF?pid=Api&P=0&h=180.jpeg">
+    </div>
+
+    <hr>
+
+    <h2>Cara Pesan</h2>
+    <p>Tinggal klik tombol "Beli Sekarang", dan pesanan kamu akan segera kami proses.</p>
+    <button onclick="pesan()">Beli Sekarang</button>
+    <div id="popup" class="popup">
+        <p>Terimakasih sudah memesan DINO DRINK! Semoga harimu senyum terus :)</p>
+        <button onclick="tutuppopup()">Tutup</button>
+    </div>
+    <p>Setiap pemesanan akan mendapatkan stiker dino ekslusif <b>GRATIS!</b></p>
+
+    <hr>
+
+    <h2>Testimoni Pelanggan</h2>
+    <ol>
+        <li>"Aku suka banget Dino Berry, seger dan lucu botolnya! -Anisa, Mahasiswa</li>
+        <li>"Anakku tiap hari nanya Dino Drink, katanya dino-nya lucu banget!" - Bu Yani, Ibu Rumah Tangga</li>
+        <li>"Cokelatnya berasa premium banget, worth it!" - Fadil, Freelancer</li>
+    </ol>
+
+    <h2>Lokasi & Kontak</h2>
+    <ul>
+        <li>Outlet Utama: Jl. Mawar No. 10 Medan</li>
+        <li>Buka: 10:00 - 21.00 WIB</li>
+        <li>WA:<a href="https://wa.me/628888081839?text=Halo%20Dino%20Drink%20saya%20mau%20pesan%20minuman" target="_blank"> 0888-8081-839</a></li>
+        <li>Instagram :<a href="https://www.instagram.com/klik_webmu/" target="_blank">@klik_webmu</a></li>
+    </ul>
+
+    <hr>
+
+    <p class="text">Terimakasih sudah mampir ke <b>Dino Drink!</b> <br> Kapan lagi minum sambil senyum? Yuk pesan sekarang dan rasakan segarnya dunia dinosaurus!</p>
+
+    <hr>
+
+    <footer>
+        <p>© Dino Drink - Segarnya Bikin Senyum</p>
+    </footer>
+    <script src="dino.js"></script>
+</body>
+</html>
